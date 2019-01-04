@@ -1,4 +1,4 @@
-Repositório destinado aos códigos e arquivos referente ao processo seletivo (dividido em duas etapaas) para estágio em Ciência de Dados.
+Repositório destinado aos códigos e arquivos referente ao processo seletivo (dividido em duas etapas) para estágio em Ciência de Dados.
 
 # Etapa 1
 
@@ -23,16 +23,16 @@ $ python3 psel_ds.py
 # Etapa 2
 
 ## Descrição
-Todos ss títulos de anúncios utilizados nessa etapa (com excessão dos que foram fornecidos) foram crawleados no site [buscapé](https://www.buscape.com.br/), os cógigos produzidos estão divididos em três arquivos: 
+Todos ss títulos de anúncios utilizados nessa etapa (com exceção dos que foram fornecidos) foram crawleados no site [buscapé](https://www.buscape.com.br/), os cógigos produzidos estão divididos em três arquivos: 
 
-* [smart_spider.py](etapa_2/crawler_prod/crawler_prod/spiders/smart_spider.py) - Responsável por crawlear todos os anuncios de ofertas de smartphones do site [buscapé](https://www.buscape.com.br/), os anúncios estão disponíveis no arquivo [smartphones.json](etapa_2/data/smartphones.json).
-* [not_smart_spider.py](etapa_2/crawler_prod/crawler_prod/spiders/not_smart_spider.py) - Responsável por crawlear os anuncios de ofertas de não smartphones, os anúncios estão disponíveis no arquivo [nao_smartphones.json](etapa_2/data/nao_smartphones.json). É válido destacar que esse crawler percorre o mapa do site, crawleando uma página de cada tipo de produto, com excessão dos acessórios de smartphone que são crawleados até a última página.
+* [smart_spider.py](etapa_2/crawler_prod/crawler_prod/spiders/smart_spider.py) - Responsável por crawlear todos os anúncios de ofertas de smartphones do site [buscapé](https://www.buscape.com.br/), os anúncios estão disponíveis no arquivo [smartphones.json](etapa_2/data/smartphones.json).
+* [not_smart_spider.py](etapa_2/crawler_prod/crawler_prod/spiders/not_smart_spider.py) - Responsável por crawlear os anúncios de ofertas de não smartphones, os anúncios estão disponíveis no arquivo [nao_smartphones.json](etapa_2/data/nao_smartphones.json). É válido destacar que esse crawler percorre o mapa do site, crawleando uma página de cada tipo de produto, com excessão dos acessórios de smartphone que são crawleados até a última página.
 * [etapa_2.ipynb](etapa_2/etapa_2.ipynb) - Jupyter notebook que contém todos os códigos solicitados na tarefa, para uma melhor visualização recomendo que seja visualizado clicando [aqui](https://colab.research.google.com/drive/1h4XN05ONt32LrkzFvb_sq8l2bon6_cDT).
 
 Os arquivos gerados pelo notebook também são três:
 * [produtos_classificados.csv](etapa_2/out/produtos_classificados.csv) - CSV que contém o id, título e categoria (smartphone ou não-smartphone) de todos os anúncios do arquivo de entrada ([data_estag_ds.tsv](etapa_2/data/data_estag_ds.tsv)).
 * [smartphones_atributos.csv](etapa_2/out/smartphones_atributos.csv) - CSV que contém o id, título, marca, ram (quantidade), tela (tamanho) e cor dos smartphones do arquivo de entrada.
-* [smartphones_duplicados.csv](etapa_2/out/smartphones_duplicados.csv) - CSV que contém os smartphones que foram considerados duplicados do arquivo de entrada, os campos são dividios em 'ID 1' e 'ID 2' (id's dos smartphones), 'TITLE 1' e 'TITLE 2' (títulos dos smartphones), 'Similaridade' (similaridade entre os títulos), 'Especificações iguais' (especificações em comum nos smartphones) e 'Especificações diferentes' (especificações que são distintas nos aparelhos 1 e 2 respectivamente).
+* [smartphones_duplicados.csv](etapa_2/out/smartphones_duplicados.csv) - CSV que contém os smartphones que foram considerados duplicados do arquivo de entrada, os campos são divididos em 'ID 1' e 'ID 2' (id's dos smartphones), 'TITLE 1' e 'TITLE 2' (títulos dos smartphones), 'Similaridade' (similaridade entre os títulos), 'Especificações iguais' (especificações em comum nos smartphones) e 'Especificações diferentes' (especificações que são distintas nos aparelhos 1 e 2 respectivamente).
 
 ## Pré-requisitos
 * [python 3](https://www.python.org/download/releases/3.0/)
